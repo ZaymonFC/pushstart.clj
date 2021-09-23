@@ -1,4 +1,4 @@
-# pushstart.clj
+# 👟 pushstart.clj
 
 Sometimes all you need to do is get a little experiment running in a REPL with a http client, csv-reader, and other utilities.
 
