@@ -15,7 +15,27 @@
       org.clojure/data.csv {:mvn/version "1.0.0"}
       clojure.java-time/clojure.java-time {:mvn/version "0.3.2"}
       clj-http/clj-http {:mvn/version "3.12.3"}
-      camel-snake-kebab/camel-snake-kebab {:mvn/version "0.4.2"}}}))
+      camel-snake-kebab/camel-snake-kebab {:mvn/version "0.4.2"}
+      org.clojure/math.combinatorics {:mvn/version "0.1.6"}
+      metosin/malli {:mvn/version "0.6.1"}
+      hashp/hashp {:mvn/version "0.2.1"}}}))
+
+(def script
+  "Quoted code block that becomes 'script.clj'"
+  (->>
+   ['(require '[clojure.data.json :as json]
+              '[clojure.data.csv :as csv]
+              '[clojure.set :as set]
+              '[clojure.string :as string]
+              '[clojure.math.combinatorics :as combo]
+              '[camel-snake-kebab.core :as csk]
+              '[java-time :as jtime]
+              '[clj-http.client :as client]
+              '[malli.core :as m]
+              '[hashp.core :refer :all])
+    '(println "Hello World!")]
+   (map quote->string)
+   (join "\n")))
 
 (def git-ignore
   (lines
@@ -42,19 +62,6 @@
    "## README"
    ""
    "Generated with pushstart.clj"))
-
-
-(def script
-  "Quoted code block that becomes 'script.clj'"
-  (->>
-   ['(require '[clojure.data.json :as json]
-              '[clojure.data.csv :as csv]
-              '[camel-snake-kebab.core :as csk]
-              '[java-time :as time]
-              '[clj-http.client :as client])
-    '(println "Hello World!")]
-   (map quote->string)
-   (join "\n")))
 
 (def files-to-generate
   [["deps.edn" deps-edn]

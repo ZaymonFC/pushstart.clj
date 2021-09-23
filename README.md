@@ -9,7 +9,22 @@ Sometimes all you need to do is get a little experiment running in a REPL with a
 - `README.md`
 - `.gitignore` —tailored to Clojure.
 
-## Usage. This script can be run with `clj` or `bb`
+## Utilities
+
+`pushstart.clj` comes with most of the utilities you'll need for small tasks.
+
+- `clojure.set`
+- `clojure.string`
+- [`clojure.data.json`](https://github.com/clojure/data.json)
+- [`clojure.data.csv`](https://github.com/clojure/data.csv)
+- [`math.combinatorics`](https://github.com/clojure/math.combinatorics)
+- [`camel-snake-kebab`](https://github.com/clj-commons/camel-snake-kebab)
+- [`clojure.java-time`](https://github.com/dm3/clojure.java-time)
+- [`clj-http`](https://github.com/dakrone/clj-http)
+- [`Malli`](https://github.com/metosin/malli)
+- [`Hashp`](https://github.com/weavejester/hashp)
+
+## Usage
 
 To use this script with [babashka](https://github.com/babashka/babashka), simply put `pushstart.clj` somewhere on your path. Then:
 
