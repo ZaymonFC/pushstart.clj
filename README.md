@@ -35,3 +35,22 @@ cd my-project
 
 pushstart.clj # Files will be created in current directory.
 ```
+
+## Created Script:
+
+```clojure
+;; script.clj imports and aliases common utilities so you can get to work.
+(require
+ '[clojure.data.json :as json]
+ '[clojure.data.csv :as csv]
+ '[clojure.set :as set]
+ '[clojure.string :as string]
+ '[clojure.math.combinatorics :as combo]
+ '[camel-snake-kebab.core :as csk]
+ '[java-time :as jtime]
+ '[clj-http.client :as client]
+ '[malli.core :as m]
+ '[hashp.core :refer :all])
+
+(println "Hello World!")
+```
