@@ -1,6 +1,6 @@
 # 👟 pushstart.clj
 
-Sometimes all you need to do is get a little experiment running in a REPL with a http client, csv-reader, and other utilities.
+Sometimes all you need to do is get a little experiment running in a REPL with some utilities.
 
 `pushstart` generates a small project starter containing:
 
@@ -11,7 +11,8 @@ Sometimes all you need to do is get a little experiment running in a REPL with a
 
 ## Utilities
 
-`pushstart.clj` comes with most of the utilities you'll need for small tasks.
+`pushstart.clj` creates a project with most of the utilities you'll need for small tasks.
+All of the following utilities are already imported and aliased.
 
 - `clojure.set`
 - `clojure.string`
